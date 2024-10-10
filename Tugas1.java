@@ -22,14 +22,8 @@ public class Tugas1 {
         while (isLanjut) {
 
             //input jumlah tiket yang akan dibeli
-            System.out.print("Masukkan jumlah tiket (masukkan 0 untuk batal) : ");
+            System.out.print("Masukkan jumlah tiket : ");
             jml_tiket = input.nextInt();
-
-            //jika batal
-            if (jml_tiket == 0) {
-                System.out.println("Transaksi Selesai");
-                break;
-            }
 
             //jika input negarif
             if (jml_tiket < 0) {
@@ -62,6 +56,10 @@ public class Tugas1 {
 
             //output untuk transaksi sementara
             System.out.println("Total harga untuk " + jml_tiket + " tiket adalah Rp " + harga_diskon);
+
+            //input isLanjut
+            System.out.print("Apakah lanjut? (true / false) : ");
+            isLanjut = input.nextBoolean();
 
         };
 
