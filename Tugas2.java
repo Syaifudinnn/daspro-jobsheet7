@@ -35,12 +35,6 @@ public class Tugas2 {
                 break;
             }
 
-            //jika input tidak sesuai
-            if (jenis != 0 || jenis != 1 || jenis != 2) {
-                System.out.println("Masukkan kode jenis yg benar!");
-                continue;
-            }
-
             //jika lanjut
             if (jenis == 1 || jenis == 2) {
                 //input durasi parkir
